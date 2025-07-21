@@ -4,7 +4,7 @@ const ApiCalling = () => {
   const inputField = document.querySelector(".search input");
   const cityInput = inputField.value;
 
-  let api = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=${cityInput}&appid=${api_key} `;
+  let api = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=${cityInput}&appid=${api_key}`;
 
   fetch(api)
     .then((res) => res.json())
