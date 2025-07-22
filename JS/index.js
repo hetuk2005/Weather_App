@@ -1,4 +1,5 @@
 let api_key = "bc3879d0be0368c59db7c196ee0dd4e5";
+let api_map_key = "AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8";
 
 const ApiCalling = () => {
   const inputField = document.querySelector(".search input");
@@ -13,6 +14,8 @@ const ApiCalling = () => {
         alert("City not found!");
         return;
       }
+
+      let api_map = `https://www.google.com/maps/embed/v1/place?q=${value.name}&key=${api_map_key}`;
 
       const card = document.querySelector(".card");
       const card_1 = document.createElement("div");
@@ -53,6 +56,7 @@ const ApiCalling = () => {
       wind_img.src = "./Utils/wind.png";
       hum_text.innerText = "Humidity";
       wind_text.innerText = "Wind Speed";
+      iframe.src = api_map;
 
       child_1.append(humidity, hum_text);
       col.append(hum_img, child_1);
