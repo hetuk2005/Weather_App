@@ -7,24 +7,32 @@
         <link rel="stylesheet" href="./CSS/index.css" />
         <link rel="shortcut icon" href="./Utils/Icon.svg">
     </head>
-    <body>
+    <body onload="getLocation()">
         <h1>Weather Information</h1>
         <div class="search">
-            <input type="text" placeholder="Enter City Name">
+            <input id="search" type="text" placeholder="Enter City Name">
             <button onclick="ApiCalling()">Check Weather <img
                     src="./Utils/weather.svg"
                     alt></button>
             <div class="card"></div>
             <div
-                style="overflow:hidden;resize:none;max-width:85%;width:330px;height:330px;"><div
-                    id="google-maps-canvas"
-                    style="height:100%; width:100%;max-width:100%;"><iframe
-                        style="height:100%;width:100%;border:0;" frameborder="0"
-                        src="https://www.google.com/maps/embed/v1/place?q=andheri&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a
-                    class="embed-ded-maphtml"
+                style="text-decoration:none; overflow:hidden;max-width:100%;width:370px;height:370px;padding: 25px 0;">
+                <div
+                    id="my-map-display"
+                    style="height:100%; width:100%;max-width:100%;">
+                    <iframe
+                        id="iframe"
+                        style="height:100%;width:100%;border:0;"
+                        frameborder="0">
+                    </iframe>
+                </div>
+                <a
+                    class="google-map-code-enabler" rel="nofollow"
                     href="https://www.bootstrapskins.com/themes"
-                    id="grab-map-authorization">premium bootstrap
-                    themes</a><style>#google-maps-canvas img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>
+                    id="make-map-infor-mation">
+                </a>
+                <style>#my-map-display img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}</style>
+            </div>
         </div>
     </body>
     <script src="./JS/index.js"></script>
