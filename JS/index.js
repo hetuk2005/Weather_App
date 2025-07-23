@@ -118,7 +118,6 @@ const get_weather_by_location = async (lat, lon) => {
   try {
     let res = await fetch(api_key2);
     let data = await res.json();
-    console.log(data);
 
     appends(data);
   } catch (err) {
