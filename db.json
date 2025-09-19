@@ -106,5 +106,16 @@
         }
     ],
     "variable":[
+        {
+        "img":"https://github.com/hetuk2005/Weather_App/blob/main/Utils/Image-9.jpg?raw=true",
+        "img1":"https://github.com/hetuk2005/Weather_App/blob/main/Utils/Image-10.jpg?raw=true",
+        "img2":"https://github.com/hetuk2005/Weather_App/blob/main/Utils/Image-11.jpg?raw=true"
+        }
+    ],
+    "external":[
+        {
+        "img3":"https://github.com/hetuk2005/Weather_App/blob/main/Utils/Image-12.jpg?raw=true",
+        "img4":"https://github.com/hetuk2005/Weather_App/blob/main/Utils/Image-13.jpg?raw=true"
+        }
     ]
 }
